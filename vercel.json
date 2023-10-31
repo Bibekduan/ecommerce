@@ -17,9 +17,7 @@
       "ALLOWED_HOSTS": ".vercel.app"
     },
     "functions": {
-      "render": {
-        "handler": "ecommerce.wsgi.application"
-      }
+      "render": {}
     }
   }
   
