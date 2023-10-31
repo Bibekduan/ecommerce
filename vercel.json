@@ -3,11 +3,11 @@
     
     "routes": [
       { "src": "/static/(.*)", "headers": { "Cache-Control": "public, max-age=31536000" } },
-      { "src": "/media/(?<.*>)", "dest": "/ecommerce/media/$1" },
-      { "src": "/admin/(?<.*>)", "dest": "/ecommerce/wsgi.py" },
-      { "src": "/cart/(?<.*>)", "dest": "/ecommerce/wsgi.py" },
-      { "src": "/checkout/(?<.*>)", "dest": "/ecommerce/wsgi.py" },
-      { "src": "/product/(?<.*>)", "dest": "/ecommerce/wsgi.py" },
+      { "src": "/media/(.*)", "dest": "/ecommerce/media/$1" },
+      { "src": "/admin/(.*)", "dest": "/ecommerce/wsgi.py" },
+      { "src": "/cart/(.*)", "dest": "/ecommerce/wsgi.py" },
+      { "src": "/checkout/(.*)", "dest": "/ecommerce/wsgi.py" },
+      { "src": "/product/(.*)", "dest": "/ecommerce/wsgi.py" },
       { "src": "/(.*)", "dest": "/ecommerce/wsgi.py" }
     ],
     "env": {
