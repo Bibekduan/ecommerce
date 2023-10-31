@@ -250,7 +250,7 @@
                                         <img alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-cart.svg' %}" />
                                         <span class="pro-count blue cart-items-count">{{request.session.cart_data_obj|length }}</span>
                                     </a>
-                                    <a href="shop-cart.html"><span class="lable">Cart</span></a>
+                                    <a href="{% url 'cart' %}"><span class="lable">Cart</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                     
                                         <div class="shopping-cart-footer">
@@ -266,7 +266,7 @@
                                     <a href="page-account.html">
                                         <img class="svgInject" alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-user.svg' %}" />
                                     </a>
-                                    <a href="page-account.html"><span class="lable ml-0">Account</span></a>
+                                    <a href="{% url 'dashboard' %}"><span class="lable ml-0">Account</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
                                             <li><a href="{% url 'dashboard' %}"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>
@@ -608,7 +608,7 @@
                                     </li>
                                     <li><a href="shop-filter.html">Shop – Filter</a></li>
                                     <li><a href="shop-wishlist.html">Shop – Wishlist</a></li>
-                                    <li><a href="shop-cart.html">Shop – Cart</a></li>
+                                    <li><a href="{% url 'cart' %}l">Shop – Cart</a></li>
                                     <li><a href="{% url 'checkout' %}">Shop – Checkout</a></li>
                                     <li><a href="shop-compare.html">Shop – Compare</a></li>
                                     <li class="menu-item-has-children">
@@ -870,7 +870,7 @@
                         <h4 class="widget-title">Account</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
                             <li><a href="#">Sign In</a></li>
-                            <li><a href="#">View Cart</a></li>
+                            <li><a href="{% url 'cart' %}">View Cart</a></li>
                             <li><a href="#">My Wishlist</a></li>
                             <li><a href="#">Track My Order</a></li>
                             <li><a href="#">Help Ticket</a></li>
